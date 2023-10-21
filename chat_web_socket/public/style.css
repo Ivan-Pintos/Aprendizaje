@@ -1,0 +1,72 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+:root {
+  color-scheme: light dark;
+}
+body {
+  margin: 0;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  display: grid;
+  place-content: center;
+  height: 100vh;
+  padding: 36px;
+  grid-template-rows: 1fr;
+}
+
+#chat {
+  border: 1px solid greenyellow;
+  border-radius: 4px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 350px;
+  height: 100%;
+  position: relative;
+}
+form {
+  border-top: 1px solid yellowgreen;
+  display: flex;
+  padding: 10px 20px;
+}
+input[type="text"] {
+  padding: 0.7rem 0.5rem;
+  color: greenyellow;
+  border: currentColor solid 1px;
+  border-radius: 10px 0px 0px 10px;
+  flex: 1;
+}
+button[type="submit"] {
+  padding: 0.7rem 0.5rem;
+  color: greenyellow;
+  background-color: green;
+  border-radius: 0px 10px 10px 0px;
+
+  border: solid 1px greenyellow;
+  border-left: 0;
+}
+#messages {
+  height: 100%;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+  list-style: none;
+  padding: 10px;
+  margin: 0;
+  padding-bottom: 1rem;
+}
+
+#messages > li {
+  padding: 5px 5px;
+  border-radius: 10px;
+}
+#messages > li > span {
+  color: yellowgreen;
+  display: inline-block;
+  border: 1px solid currentColor;
+  border-radius: 10px;
+  padding: 10px 5px;
+}

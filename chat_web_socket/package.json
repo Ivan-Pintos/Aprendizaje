@@ -1,0 +1,24 @@
+{
+  "name": "chat_web_socket",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "nodemon ./server/",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "tables": "node ./db/createDatabaseTables.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@sequelize/core": "^7.0.0-alpha.29",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "morgan": "^1.10.0",
+    "mysql2": "^3.6.2",
+    "sequelize": "^6.33.0",
+    "socket.io": "^4.7.2"
+  }
+}
